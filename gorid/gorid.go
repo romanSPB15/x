@@ -67,7 +67,6 @@ func Is(name string) bool {
 }
 
 // Must паникует, если эта горутина не является name.
-// Если имя не найдено, возвращает пустую строку.
 func Must(name string) {
 	if !Is(name) {
 		got := Current()
